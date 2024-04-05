@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(78, 47, 108);
+    overflow: hidden;
+    margin-left: 77px;
+    margin-right: 77px;
+}
+.Titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.TextoTitulo {
+    background-color: rgba(161, 244, 216, 0.5);
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    width: 340px;
+    height: 80px;
+}
+.Principal {
+    display: flex;
+    justify-content: center;
+}
+.Trabalhos {
+    background-color: rgb(111, 81, 141);
+    justify-content: center;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.Sobre {
+    background-color: rgb(111, 81, 141);
+    justify-content: center;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.Comms {
+    background-color: rgb(111, 81, 141);
+    justify-content: center;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.ON {
+    width: 60%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    height: 650px;
+}
+.OFF {
+    width: 20%;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 600px;
+}
+
+.SubT {
+    background-color: rgba(250, 235, 215, 0.9);
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.Texto {
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.OFF .Texto {
+    display: none;
+}
+.ON .PFP {
+    display: none;
+}
+button {
+    border-radius: 20px;
+    background-color: rgb(188, 131, 241);
+    height: 50px;
+    font-weight: bolder;
+}
+.PFP {
+    margin-top: 77px;
+    height: 40%;
+    width: auto;
+    border-radius: 30%;
+}
