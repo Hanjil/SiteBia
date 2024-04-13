@@ -11,18 +11,18 @@
             alert("Eu hein, apertou pq?");
         }
         function trocarCategoria(elementoPai) {
-    // Desliga todas as categorias
-    const todasCategorias = document.querySelectorAll('.Sobre, .Trabalhos, .Comms');
-    todasCategorias.forEach(categoria => {
-        categoria.classList.remove('ON');
-        categoria.classList.add('OFF');
-    });
+            // Desliga todas as categorias
+            const todasCategorias = document.querySelectorAll('.Sobre, .Trabalhos, .Comms');
+            todasCategorias.forEach(categoria => {
+                categoria.classList.remove('ON');
+                categoria.classList.add('OFF');
+            });
 
-    // Liga a categoria selecionada
-    const categoriaSelecionada = elementoPai.parentElement;
-    categoriaSelecionada.classList.remove('OFF');
-    categoriaSelecionada.classList.add('ON');
-}
+            // Liga a categoria selecionada
+            const categoriaSelecionada = elementoPai.parentElement;
+            categoriaSelecionada.classList.remove('OFF');
+            categoriaSelecionada.classList.add('ON');
+        }
     </script>
     <style>
         .Idol {
@@ -63,7 +63,7 @@
                     <button class="BotaoFics"></button>
                     <div class="Texto MiniOn">
                         <div class="Idol">
-                            <button class="Fic"><h2>You Can Call Me Idol</h2></button>
+                            <button class="Fic" onclick="window.open('https://twitter.com/Smoothlikebia/status/1563150861471461379', '_blank')"><h2>You Can Call Me Idol</h2></button>
                             <p>Seokjin é um dos idols mais talentosos e respeitados da indústria,
                                 mas é conhecido também pela língua afiada, rendendo polêmica atrás de polêmica.</p>
                             <p>Onde Namjoon é o novo empresário do cantor mesmo depois de cinco pessoas terem
