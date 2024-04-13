@@ -7,12 +7,9 @@
     <link rel="stylesheet" href="nha.css">
     <script src="nhaa.js"></script>
     <style>
-        .Fics img, .Capas img {
-            max-width: 30%;
-            height: auto;
-            margin: 10px;
+        .Fics, .Capas{
+            background-color: rgb(237, 198, 248);
         }
-
     </style>
 </head>
 <body>
@@ -24,19 +21,17 @@
 
     <div class="Principal">
 
-        <div class="Trabalhos ON">
+        <div class="Trabalhos OFF">
             <div class="SubT">
                 <h1>MEUS TRABALHOS</h1>
             </div>
             <div class="Fics">
-                <img src="20240404_105602.jpg">
             </div>
             <div class="Capas">
-                <img src="20240404_105602.jpg">
             </div>
         </div>
 
-        <div class="Sobre OFF">
+        <div class="Sobre ON">
             <div class="SubT">
                 <h1>SOBRE MIM</h1>
             </div>
@@ -47,10 +42,9 @@
                 <p>Sou army OT7.</p>
                 <p>Nesse site você pode ver os meus trabalhos,</p>
                 <p>e caso queira, me fazer uma encomenda!</p>
-                <button>Conta principal</button>
-                <button>Reserva</button>
-                <button>Sinhinho</button>
-                <button>------</button>
+                <button class="Links" onclick="window.open('https://twitter.com/Smoothlikebia', '_blank')">Conta principal</button>
+                <button class="Links" onclick="window.open('https://twitter.com/bia_sininho7', '_blank')">Sinhinho</button>
+                <button class="Links" onclick="window.location.href='https://'">???????</button>
             </div>
             <img class="PFP" src="20240404_105602.jpg">
         </div>

@@ -28,6 +28,7 @@ body {
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
+    transition: transform 200ms ease-in-out;
 }
 .Sobre {
     background-color: rgb(111, 81, 141);
@@ -35,6 +36,7 @@ body {
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
+    transition: transform 200ms ease-in-out;
 }
 .Comms {
     background-color: rgb(111, 81, 141);
@@ -42,6 +44,11 @@ body {
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
+    transition: transform 200ms ease-in-out;
+}
+.OFF:hover {
+    transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
 }
 .ON {
     width: 60%;
@@ -82,12 +89,18 @@ body {
 .ON .PFP {
     display: none;
 }
-button {
+.Links {
     border-radius: 20px;
     background-color: rgb(188, 131, 241);
     height: 50px;
     font-weight: bolder;
+    transition: transform 200ms ease-in-out;
 }
+.Links:hover {
+    transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
+}
+
 .PFP {
     margin-top: 77px;
     height: 40%;
