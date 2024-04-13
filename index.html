@@ -6,9 +6,42 @@
     <title>Cantinho da Bia</title>
     <link rel="stylesheet" href="nha.css">
     <script src="nhaa.js"></script>
+    <script>
+        function mostrarMensagem() {
+            alert("Eu hein, apertou pq?");
+        }
+        function trocarCategoria(elementoPai) {
+    // Desliga todas as categorias
+    const todasCategorias = document.querySelectorAll('.Sobre, .Trabalhos, .Comms');
+    todasCategorias.forEach(categoria => {
+        categoria.classList.remove('ON');
+        categoria.classList.add('OFF');
+    });
+
+    // Liga a categoria selecionada
+    const categoriaSelecionada = elementoPai.parentElement;
+    categoriaSelecionada.classList.remove('OFF');
+    categoriaSelecionada.classList.add('ON');
+}
+    </script>
     <style>
-        .Fics, .Capas{
-            background-color: rgb(237, 198, 248);
+        .Idol {
+            background-color: rgb(165, 165, 255);
+            border-radius: 10px;
+            text-align: left;
+            text-align: justify;
+            width: 500px;
+            height: auto;
+        }
+        .Fic {
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 300px;
+            height: 10px;
+            border: none;
+            border-radius: 10%;
+            margin: 10px;
+            background-color: rgba(0, 0, 0, 0);
         }
     </style>
 </head>
@@ -23,17 +56,33 @@
 
         <div class="Trabalhos OFF">
             <div class="SubT">
-                <h1>MEUS TRABALHOS</h1>
+                <button class="ButtonSubT" onclick="trocarCategoria(this.parentElement)"><h1>MEUS TRABALHOS</h1></button>
             </div>
-            <div class="Fics">
-            </div>
-            <div class="Capas">
+            <div class="Opcoes">
+                <div class="Fics">
+                    <button class="BotaoFics"></button>
+                    <div class="Texto MiniOn">
+                        <div class="Idol">
+                            <button class="Fic"><h2>You Can Call Me Idol</h2></button>
+                            <p>Seokjin é um dos idols mais talentosos e respeitados da indústria,
+                                mas é conhecido também pela língua afiada, rendendo polêmica atrás de polêmica.</p>
+                            <p>Onde Namjoon é o novo empresário do cantor mesmo depois de cinco pessoas terem
+                                desistido do que parece ser o cargo mais complicado do mundo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Capas">
+                    <button class="BotaoCapas2"></button>
+                    <div class="Texto MiniOff">
+                        <p>To sem nenhuma capa salva, perdão</p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="Sobre ON">
             <div class="SubT">
-                <h1>SOBRE MIM</h1>
+                <button class="ButtonSubT" onclick="trocarCategoria(this.parentElement)"><h1>SOBRE MIM</h1></button>
             </div>
             <div class="Texto">
                 <h2>Olá!</h2>
@@ -44,14 +93,14 @@
                 <p>e caso queira, me fazer uma encomenda!</p>
                 <button class="Links" onclick="window.open('https://twitter.com/Smoothlikebia', '_blank')">Conta principal</button>
                 <button class="Links" onclick="window.open('https://twitter.com/bia_sininho7', '_blank')">Sinhinho</button>
-                <button class="Links" onclick="window.location.href='https://'">???????</button>
+                <button class="Links"  onclick="mostrarMensagem()">???????</button>
             </div>
             <img class="PFP" src="20240404_105602.jpg">
         </div>
 
         <div class="Comms OFF">
             <div class="SubT">
-                <h1>COMMISSIONS</h1>
+                <button class="ButtonSubT" onclick="trocarCategoria(this.parentElement)"><h1>COMMISSIONS</h1></button>
             </div>
             <div class="Texto">
                 <p>Texto</p>

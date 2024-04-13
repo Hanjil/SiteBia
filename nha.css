@@ -80,8 +80,6 @@ body {
 }
 .Texto {
     font-size: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
 }
 .OFF .Texto {
     display: none;
@@ -106,4 +104,57 @@ body {
     height: 40%;
     width: auto;
     border-radius: 30%;
+}
+
+.ButtonSubT {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Opcoes {
+    position: relative;
+    top: 10px;
+    width: 800px;
+}
+.Fics, .Capas {
+    display: flex;
+}
+.BotaoFics {
+    background-image: url('escrita-de-copia.png');
+}
+.BotaoCapas1 {
+    background-image: url('livro-de-capa-preta-fechado.png');
+}
+.BotaoFics, .BotaoCapas1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    border: none;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.BotaoCapas2{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    border: none;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('livro-de-capa-preta-fechado.png');
+}
+
+.MiniOff {
+    display: none;
 }
